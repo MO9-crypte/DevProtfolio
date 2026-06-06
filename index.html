@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevPortfolio Builder — Build Your Dream Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===================== LANDING PAGE ===================== -->
+  <div id="landing-page" class="page active">
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-icon"><i class="fas fa-code"></i></span>
+          <span class="logo-text">DevPortfolio</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#templates">Templates</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="btn btn-ghost" id="nav-login-btn">Sign In</button>
+          <button class="btn btn-primary" id="nav-cta-btn">Start Building <i class="fas fa-arrow-right"></i></button>
+        </div>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <div class="hero-orb orb-1"></div>
+        <div class="hero-orb orb-2"></div>
+        <div class="hero-orb orb-3"></div>
+        <div class="hero-grid"></div>
+      </div>
+      <div class="container">
+        <div class="hero-badge fade-in">
+          <i class="fas fa-sparkles"></i> Trusted by 50,000+ developers worldwide
+        </div>
+        <h1 class="hero-title fade-in delay-1">
+          Build a Portfolio That<br/>
+          <span class="gradient-text">Gets You Hired</span>
+        </h1>
+        <p class="hero-subtitle fade-in delay-2">
+          Create stunning developer portfolios in minutes — no code required.
+          Choose from professional templates, customize everything, and export a
+          pixel-perfect HTML file.
+        </p>
+        <div class="hero-actions fade-in delay-3">
+          <button class="btn btn-primary btn-lg" id="hero-cta-btn">
+            <i class="fas fa-rocket"></i> Build My Portfolio — It's Free
+          </button>
+          <button class="btn btn-outline btn-lg" id="hero-demo-btn">
+            <i class="fas fa-play-circle"></i> Watch Demo
+          </button>
+        </div>
+        <div class="hero-stats fade-in delay-4">
+          <div class="stat-item">
+            <span class="stat-num">50K+</span>
+            <span class="stat-label">Portfolios Built</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">3</span>
+            <span class="stat-label">Pro Templates</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-num">100%</span>
+            <span class="stat-label">Free Forever</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-mockup fade-in delay-4">
+        <div class="mockup-browser">
+          <div class="mockup-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+            <div class="mockup-url"><i class="fas fa-lock"></i> devportfolio.io/john-doe</div>
+          </div>
+          <div class="mockup-content">
+            <div class="mock-hero">
+              <div class="mock-avatar"></div>
+              <div class="mock-lines">
+                <div class="mock-line w-60"></div>
+                <div class="mock-line w-40 muted"></div>
+                <div class="mock-btns">
+                  <div class="mock-btn accent"></div>
+                  <div class="mock-btn outline"></div>
+                </div>
+              </div>
+            </div>
+            <div class="mock-skills">
+              <div class="mock-tag"></div><div class="mock-tag"></div>
+              <div class="mock-tag"></div><div class="mock-tag w-sm"></div>
+            </div>
+            <div class="mock-projects">
+              <div class="mock-card"></div>
+              <div class="mock-card"></div>
+              <div class="mock-card"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Features</span>
+          <h2 class="section-title">Everything You Need to Stand Out</h2>
+          <p class="section-subtitle">Powerful tools designed for developers, by developers.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card glass slide-up">
+            <div class="feature-icon icon-purple"><i class="fas fa-paint-brush"></i></div>
+            <h3>3 Premium Templates</h3>
+            <p>Choose from Minimal, Modern, or Creative layouts. Switch instantly with a single click.</p>
+          </div>
+          <div class="feature-card glass slide-up delay-1">
+            <div class="feature-icon icon-blue"><i class="fas fa-eye"></i></div>
+            <h3>Live Preview</h3>
+            <p>See your changes reflected in real-time as you type. No refresh, no waiting.</p>
+          </div>
+          <div class="feature-card glass slide-up delay-2">
+            <div class="feature-icon icon-cyan"><i class="fas fa-download"></i></div>
+            <h3>Export as HTML</h3>
+            <p>Download your complete portfolio as a single HTML file. Host it anywhere for free.</p>
+          </div>
+          <div class="feature-card glass slide-up delay-3">
+            <div class="feature-icon icon-green"><i class="fas fa-moon"></i></div>
+            <h3>Dark & Light Mode</h3>
+            <p>Your portfolio supports both dark and light modes. Visitors can toggle their preference.</p>
+          </div>
+          <div class="feature-card glass slide-up delay-4">
+            <div class="feature-icon icon-orange"><i class="fas fa-palette"></i></div>
+            <h3>Theme Customization</h3>
+            <p>Pick your accent color, choose your font, and make the portfolio truly yours.</p>
+          </div>
+          <div class="feature-card glass slide-up delay-5">
+            <div class="feature-icon icon-pink"><i class="fas fa-database"></i></div>
+            <h3>Auto-Saves Locally</h3>
+            <p>All your data is saved automatically to your browser. Never lose your progress.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Templates Section -->
+    <section class="templates-section section" id="templates">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Templates</span>
+          <h2 class="section-title">Pick Your Style</h2>
+          <p class="section-subtitle">Three distinct looks, all fully customizable.</p>
+        </div>
+        <div class="templates-showcase">
+          <div class="template-card active" data-template="minimal">
+            <div class="template-preview preview-minimal">
+              <div class="tp-header"></div>
+              <div class="tp-body">
+                <div class="tp-title"></div>
+                <div class="tp-sub"></div>
+                <div class="tp-tags"><span></span><span></span><span></span></div>
+              </div>
+            </div>
+            <div class="template-info">
+              <h3>Minimal</h3>
+              <p>Clean, distraction-free layout focusing on your work.</p>
+              <span class="template-badge">Popular</span>
+            </div>
+          </div>
+          <div class="template-card" data-template="modern">
+            <div class="template-preview preview-modern">
+              <div class="tp-sidebar"></div>
+              <div class="tp-main">
+                <div class="tp-title dark"></div>
+                <div class="tp-sub dark"></div>
+                <div class="tp-grid">
+                  <div class="tp-card"></div><div class="tp-card"></div>
+                </div>
+              </div>
+            </div>
+            <div class="template-info">
+              <h3>Modern</h3>
+              <p>Bold sidebar design with a dynamic grid layout.</p>
+              <span class="template-badge blue">Pro</span>
+            </div>
+          </div>
+          <div class="template-card" data-template="creative">
+            <div class="template-preview preview-creative">
+              <div class="tp-accent-bar"></div>
+              <div class="tp-creative-body">
+                <div class="tp-big-title"></div>
+                <div class="tp-creative-grid">
+                  <div class="tp-blob"></div>
+                  <div class="tp-content-col">
+                    <div class="tp-line"></div>
+                    <div class="tp-line short"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="template-info">
+              <h3>Creative</h3>
+              <p>Expressive asymmetric design for creative developers.</p>
+              <span class="template-badge pink">New</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials section" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Testimonials</span>
+          <h2 class="section-title">Loved by Developers</h2>
+          <p class="section-subtitle">Join thousands of devs who landed their dream jobs.</p>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card glass">
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"DevPortfolio helped me land a senior role at a FAANG company. My portfolio stood out among hundreds of applicants."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #6366f1, #8b5cf6);">AK</div>
+              <div><strong>Alex Kim</strong><span>Senior Frontend Engineer, Google</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card glass featured">
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"I built my entire portfolio in under 30 minutes. The templates are stunning and the live preview is incredibly useful."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #0ea5e9, #06b6d4);">SR</div>
+              <div><strong>Sofia Rodriguez</strong><span>Full Stack Developer, Stripe</span></div>
+            </div>
+          </div>
+          <div class="testimonial-card glass">
+            <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            <p>"The export feature is a game changer. One file, host anywhere. I uploaded it to GitHub Pages in 2 minutes."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background: linear-gradient(135deg, #f59e0b, #ef4444);">MJ</div>
+              <div><strong>Marcus Johnson</strong><span>Backend Engineer, Shopify</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing section" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Pricing</span>
+          <h2 class="section-title">Simple, Transparent Pricing</h2>
+          <p class="section-subtitle">No hidden fees. No credit card required.</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="pricing-card glass">
+            <div class="pricing-header">
+              <h3>Free</h3>
+              <div class="price"><span class="price-amount">$0</span><span class="price-period">/forever</span></div>
+              <p>Perfect for getting started</p>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> 3 Premium Templates</li>
+              <li><i class="fas fa-check"></i> Live Preview</li>
+              <li><i class="fas fa-check"></i> Export as HTML</li>
+              <li><i class="fas fa-check"></i> Local Storage Save</li>
+              <li><i class="fas fa-check"></i> Theme Customization</li>
+              <li class="muted"><i class="fas fa-times"></i> Custom Domain</li>
+              <li class="muted"><i class="fas fa-times"></i> Analytics</li>
+            </ul>
+            <button class="btn btn-outline btn-full" id="pricing-free-btn">Get Started Free</button>
+          </div>
+          <div class="pricing-card glass featured">
+            <div class="pricing-badge">Most Popular</div>
+            <div class="pricing-header">
+              <h3>Pro</h3>
+              <div class="price"><span class="price-amount">$9</span><span class="price-period">/month</span></div>
+              <p>For serious job seekers</p>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> Everything in Free</li>
+              <li><i class="fas fa-check"></i> Custom Domain</li>
+              <li><i class="fas fa-check"></i> Portfolio Analytics</li>
+              <li><i class="fas fa-check"></i> AI Content Suggestions</li>
+              <li><i class="fas fa-check"></i> Priority Support</li>
+              <li><i class="fas fa-check"></i> Unlimited Projects</li>
+              <li><i class="fas fa-check"></i> Password Protection</li>
+            </ul>
+            <button class="btn btn-primary btn-full">Start Pro Trial</button>
+          </div>
+          <div class="pricing-card glass">
+            <div class="pricing-header">
+              <h3>Team</h3>
+              <div class="price"><span class="price-amount">$29</span><span class="price-period">/month</span></div>
+              <p>For agencies & bootcamps</p>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> Everything in Pro</li>
+              <li><i class="fas fa-check"></i> Up to 20 Members</li>
+              <li><i class="fas fa-check"></i> Team Dashboard</li>
+              <li><i class="fas fa-check"></i> White-label Option</li>
+              <li><i class="fas fa-check"></i> API Access</li>
+              <li><i class="fas fa-check"></i> SSO Login</li>
+              <li><i class="fas fa-check"></i> Dedicated Support</li>
+            </ul>
+            <button class="btn btn-outline btn-full">Contact Sales</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section">
+      <div class="container">
+        <div class="cta-card glass">
+          <div class="cta-orb cta-orb-1"></div>
+          <div class="cta-orb cta-orb-2"></div>
+          <div class="cta-content">
+            <h2>Ready to Build Your Dream Portfolio?</h2>
+            <p>Join 50,000+ developers who've already landed their next opportunity.</p>
+            <button class="btn btn-primary btn-lg" id="cta-final-btn">
+              <i class="fas fa-rocket"></i> Start Building — Free Forever
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="nav-logo">
+              <span class="logo-icon"><i class="fas fa-code"></i></span>
+              <span class="logo-text">DevPortfolio</span>
+            </div>
+            <p>Build portfolios that get you hired. No code required.</p>
+          </div>
+          <div class="footer-links-grid">
+            <div class="footer-col">
+              <h4>Product</h4>
+              <a href="#">Features</a><a href="#">Templates</a><a href="#">Pricing</a><a href="#">Changelog</a>
+            </div>
+            <div class="footer-col">
+              <h4>Resources</h4>
+              <a href="#">Documentation</a><a href="#">Blog</a><a href="#">Community</a><a href="#">Status</a>
+            </div>
+            <div class="footer-col">
+              <h4>Company</h4>
+              <a href="#">About</a><a href="#">Careers</a><a href="#">Privacy</a><a href="#">Terms</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 DevPortfolio Builder. Made with <i class="fas fa-heart"></i> for developers.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- ===================== DASHBOARD ===================== -->
+  <div id="dashboard-page" class="page">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="nav-logo">
+          <span class="logo-icon"><i class="fas fa-code"></i></span>
+          <span class="logo-text">DevPortfolio</span>
+        </div>
+        <button class="sidebar-close" id="sidebar-close"><i class="fas fa-times"></i></button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section-label">Editor</div>
+        <a class="sidebar-item active" data-panel="profile"><i class="fas fa-user-circle"></i><span>Profile</span></a>
+        <a class="sidebar-item" data-panel="skills"><i class="fas fa-code-branch"></i><span>Skills</span></a>
+        <a class="sidebar-item" data-panel="projects"><i class="fas fa-folder-open"></i><span>Projects</span></a>
+        <a class="sidebar-item" data-panel="experience"><i class="fas fa-briefcase"></i><span>Experience</span></a>
+        <a class="sidebar-item" data-panel="education"><i class="fas fa-graduation-cap"></i><span>Education</span></a>
+        <a class="sidebar-item" data-panel="contact"><i class="fas fa-envelope"></i><span>Contact</span></a>
+
+        <div class="nav-section-label">Customize</div>
+        <a class="sidebar-item" data-panel="theme"><i class="fas fa-palette"></i><span>Theme</span></a>
+        <a class="sidebar-item" data-panel="templates-panel"><i class="fas fa-layout"></i><span>Templates</span></a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <button class="btn btn-ghost sidebar-footer-btn" id="export-btn">
+          <i class="fas fa-download"></i> Export HTML
+        </button>
+        <button class="btn btn-ghost sidebar-footer-btn" id="back-to-landing">
+          <i class="fas fa-arrow-left"></i> Back Home
+        </button>
+      </div>
+    </aside>
+
+    <!-- Dashboard Main -->
+    <div class="dashboard-main">
+
+      <!-- Dashboard Header -->
+      <header class="dash-header">
+        <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle sidebar">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="dash-header-center">
+          <h2 id="panel-title">Profile Editor</h2>
+        </div>
+        <div class="dash-header-actions">
+          <button class="btn btn-ghost icon-btn" id="dark-mode-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="btn btn-primary" id="preview-toggle-btn">
+            <i class="fas fa-eye"></i> Preview
+          </button>
+        </div>
+      </header>
+
+      <!-- Editor Panels -->
+      <div class="editor-area" id="editor-area">
+
+        <!-- Profile Panel -->
+        <div class="editor-panel active" id="panel-profile">
+          <div class="panel-section">
+            <h3 class="panel-section-title"><i class="fas fa-id-card"></i> Personal Information</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" id="inp-name" placeholder="John Doe" data-field="name" />
+              </div>
+              <div class="form-group">
+                <label>Job Title</label>
+                <input type="text" id="inp-title" placeholder="Full Stack Developer" data-field="title" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>About Me</label>
+              <textarea id="inp-about" rows="4" placeholder="Write a short bio about yourself..." data-field="about"></textarea>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Location</label>
+                <input type="text" id="inp-location" placeholder="San Francisco, CA" data-field="location" />
+              </div>
+              <div class="form-group">
+                <label>Profile Image URL</label>
+                <input type="url" id="inp-avatar" placeholder="https://..." data-field="avatar" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Tagline / Headline</label>
+              <input type="text" id="inp-tagline" placeholder="Building things for the web." data-field="tagline" />
+            </div>
+          </div>
+          <div class="panel-section">
+            <h3 class="panel-section-title"><i class="fas fa-link"></i> Social Links</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label><i class="fab fa-github"></i> GitHub</label>
+                <input type="url" id="inp-github" placeholder="https://github.com/username" data-field="github" />
+              </div>
+              <div class="form-group">
+                <label><i class="fab fa-linkedin"></i> LinkedIn</label>
+                <input type="url" id="inp-linkedin" placeholder="https://linkedin.com/in/username" data-field="linkedin" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label><i class="fab fa-twitter"></i> Twitter / X</label>
+                <input type="url" id="inp-twitter" placeholder="https://twitter.com/username" data-field="twitter" />
+              </div>
+              <div class="form-group">
+                <label><i class="fas fa-globe"></i> Website</label>
+                <input type="url" id="inp-website" placeholder="https://yoursite.com" data-field="website" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills Panel -->
+        <div class="editor-panel" id="panel-skills">
+          <div class="panel-section">
+            <div class="panel-section-header">
+              <h3 class="panel-section-title"><i class="fas fa-tools"></i> Skills</h3>
+              <button class="btn btn-primary btn-sm" id="add-skill-btn"><i class="fas fa-plus"></i> Add Skill</button>
+            </div>
+            <div id="skills-list" class="tags-input-container">
+              <!-- Skills rendered here by JS -->
+            </div>
+            <div class="add-skill-form hidden" id="add-skill-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Skill Name</label>
+                  <input type="text" id="skill-name-input" placeholder="e.g. React" />
+                </div>
+                <div class="form-group">
+                  <label>Category</label>
+                  <select id="skill-category-input">
+                    <option value="Frontend">Frontend</option>
+                    <option value="Backend">Backend</option>
+                    <option value="Database">Database</option>
+                    <option value="DevOps">DevOps</option>
+                    <option value="Mobile">Mobile</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Level (1-5)</label>
+                  <input type="number" id="skill-level-input" min="1" max="5" value="4" />
+                </div>
+              </div>
+              <div class="form-actions">
+                <button class="btn btn-primary btn-sm" id="save-skill-btn">Save Skill</button>
+                <button class="btn btn-ghost btn-sm" id="cancel-skill-btn">Cancel</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects Panel -->
+        <div class="editor-panel" id="panel-projects">
+          <div class="panel-section">
+            <div class="panel-section-header">
+              <h3 class="panel-section-title"><i class="fas fa-folder"></i> Projects</h3>
+              <button class="btn btn-primary btn-sm" id="add-project-btn"><i class="fas fa-plus"></i> Add Project</button>
+            </div>
+            <div id="projects-list" class="items-list"><!-- JS renders --></div>
+          </div>
+          <div class="panel-section hidden" id="project-form-section">
+            <h3 class="panel-section-title" id="project-form-title"><i class="fas fa-plus-circle"></i> New Project</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Project Name</label>
+                <input type="text" id="proj-name" placeholder="My Awesome App" />
+              </div>
+              <div class="form-group">
+                <label>Status</label>
+                <select id="proj-status">
+                  <option value="Completed">Completed</option>
+                  <option value="In Progress">In Progress</option>
+                  <option value="Open Source">Open Source</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Description</label>
+              <textarea id="proj-desc" rows="3" placeholder="Describe what this project does..."></textarea>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Live URL</label>
+                <input type="url" id="proj-live" placeholder="https://..." />
+              </div>
+              <div class="form-group">
+                <label>GitHub URL</label>
+                <input type="url" id="proj-github" placeholder="https://github.com/..." />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Tech Stack (comma separated)</label>
+              <input type="text" id="proj-tech" placeholder="React, Node.js, MongoDB" />
+            </div>
+            <div class="form-group">
+              <label>Thumbnail URL (optional)</label>
+              <input type="url" id="proj-image" placeholder="https://..." />
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-primary" id="save-project-btn">Save Project</button>
+              <button class="btn btn-ghost" id="cancel-project-btn">Cancel</button>
+            </div>
+            <input type="hidden" id="editing-project-id" value="" />
+          </div>
+        </div>
+
+        <!-- Experience Panel -->
+        <div class="editor-panel" id="panel-experience">
+          <div class="panel-section">
+            <div class="panel-section-header">
+              <h3 class="panel-section-title"><i class="fas fa-briefcase"></i> Work Experience</h3>
+              <button class="btn btn-primary btn-sm" id="add-exp-btn"><i class="fas fa-plus"></i> Add Experience</button>
+            </div>
+            <div id="experience-list" class="items-list"><!-- JS renders --></div>
+          </div>
+          <div class="panel-section hidden" id="exp-form-section">
+            <h3 class="panel-section-title" id="exp-form-title"><i class="fas fa-plus-circle"></i> New Experience</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Job Title</label>
+                <input type="text" id="exp-title" placeholder="Senior Developer" />
+              </div>
+              <div class="form-group">
+                <label>Company</label>
+                <input type="text" id="exp-company" placeholder="Acme Corp" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Start Date</label>
+                <input type="text" id="exp-start" placeholder="Jan 2022" />
+              </div>
+              <div class="form-group">
+                <label>End Date</label>
+                <input type="text" id="exp-end" placeholder="Present" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Description</label>
+              <textarea id="exp-desc" rows="3" placeholder="Key responsibilities and achievements..."></textarea>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-primary" id="save-exp-btn">Save Experience</button>
+              <button class="btn btn-ghost" id="cancel-exp-btn">Cancel</button>
+            </div>
+            <input type="hidden" id="editing-exp-id" value="" />
+          </div>
+        </div>
+
+        <!-- Education Panel -->
+        <div class="editor-panel" id="panel-education">
+          <div class="panel-section">
+            <div class="panel-section-header">
+              <h3 class="panel-section-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+              <button class="btn btn-primary btn-sm" id="add-edu-btn"><i class="fas fa-plus"></i> Add Education</button>
+            </div>
+            <div id="education-list" class="items-list"><!-- JS renders --></div>
+          </div>
+          <div class="panel-section hidden" id="edu-form-section">
+            <h3 class="panel-section-title" id="edu-form-title"><i class="fas fa-plus-circle"></i> New Education</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Degree / Certification</label>
+                <input type="text" id="edu-degree" placeholder="B.Sc. Computer Science" />
+              </div>
+              <div class="form-group">
+                <label>Institution</label>
+                <input type="text" id="edu-school" placeholder="MIT" />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Start Year</label>
+                <input type="text" id="edu-start" placeholder="2018" />
+              </div>
+              <div class="form-group">
+                <label>End Year</label>
+                <input type="text" id="edu-end" placeholder="2022" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Description (optional)</label>
+              <textarea id="edu-desc" rows="2" placeholder="Relevant courses, GPA, honors..."></textarea>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-primary" id="save-edu-btn">Save Education</button>
+              <button class="btn btn-ghost" id="cancel-edu-btn">Cancel</button>
+            </div>
+            <input type="hidden" id="editing-edu-id" value="" />
+          </div>
+        </div>
+
+        <!-- Contact Panel -->
+        <div class="editor-panel" id="panel-contact">
+          <div class="panel-section">
+            <h3 class="panel-section-title"><i class="fas fa-envelope"></i> Contact Information</h3>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" id="inp-email" placeholder="john@example.com" data-field="email" />
+              </div>
+              <div class="form-group">
+                <label>Phone (optional)</label>
+                <input type="tel" id="inp-phone" placeholder="+1 (555) 000-0000" data-field="phone" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Contact Form Message</label>
+              <textarea id="inp-contact-message" rows="3" placeholder="Custom message shown on contact section..." data-field="contactMessage"></textarea>
+            </div>
+            <div class="form-group">
+              <label>Availability Status</label>
+              <select id="inp-availability" data-field="availability">
+                <option value="open">Open to opportunities</option>
+                <option value="freelance">Available for freelance</option>
+                <option value="busy">Currently not available</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Theme Panel -->
+        <div class="editor-panel" id="panel-theme">
+          <div class="panel-section">
+            <h3 class="panel-section-title"><i class="fas fa-palette"></i> Color & Theme</h3>
+            <div class="form-group">
+              <label>Accent Color</label>
+              <div class="color-picker-row">
+                <input type="color" id="accent-color-picker" value="#6366f1" />
+                <div class="color-presets">
+                  <button class="color-preset" style="background:#6366f1" data-color="#6366f1" title="Indigo"></button>
+                  <button class="color-preset" style="background:#0ea5e9" data-color="#0ea5e9" title="Sky Blue"></button>
+                  <button class="color-preset" style="background:#10b981" data-color="#10b981" title="Emerald"></button>
+                  <button class="color-preset" style="background:#f59e0b" data-color="#f59e0b" title="Amber"></button>
+                  <button class="color-preset" style="background:#ef4444" data-color="#ef4444" title="Red"></button>
+                  <button class="color-preset" style="background:#ec4899" data-color="#ec4899" title="Pink"></button>
+                  <button class="color-preset" style="background:#8b5cf6" data-color="#8b5cf6" title="Violet"></button>
+                  <button class="color-preset" style="background:#06b6d4" data-color="#06b6d4" title="Cyan"></button>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Font Family</label>
+              <select id="font-selector">
+                <option value="Inter">Inter (Default)</option>
+                <option value="Syne">Syne (Editorial)</option>
+                <option value="JetBrains Mono">JetBrains Mono (Code)</option>
+                <option value="Georgia">Georgia (Classic)</option>
+                <option value="Arial">Arial (Clean)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Portfolio Dark Mode</label>
+              <div class="toggle-row">
+                <label class="toggle">
+                  <input type="checkbox" id="portfolio-dark-toggle" />
+                  <span class="toggle-slider"></span>
+                </label>
+                <span class="toggle-label" id="portfolio-dark-label">Light Mode</span>
+              </div>
+            </div>
+          </div>
+          <div class="panel-section">
+            <h3 class="panel-section-title"><i class="fas fa-sliders-h"></i> Section Visibility</h3>
+            <div class="visibility-grid">
+              <label class="checkbox-row"><input type="checkbox" checked data-section="about" /> <span>About Me</span></label>
+              <label class="checkbox-row"><input type="checkbox" checked data-section="skills" /> <span>Skills</span></label>
+              <label class="checkbox-row"><input type="checkbox" checked data-section="projects" /> <span>Projects</span></label>
+              <label class="checkbox-row"><input type="checkbox" checked data-section="experience" /> <span>Experience</span></label>
+              <label class="checkbox-row"><input type="checkbox" checked data-section="education" /> <span>Education</span></label>
+              <label class="checkbox-row"><input type="checkbox" checked data-section="contact" /> <span>Contact</span></label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Templates Panel -->
+        <div class="editor-panel" id="panel-templates-panel">
+          <div class="panel-section">
+            <h3 class="panel-section-title"><i class="fas fa-layout"></i> Choose Template</h3>
+            <div class="template-picker">
+              <div class="tp-option active" data-tpl="minimal">
+                <div class="tp-thumb thumb-minimal">
+                  <div class="tpt-header"></div>
+                  <div class="tpt-lines"><div></div><div></div><div></div></div>
+                </div>
+                <span>Minimal</span>
+              </div>
+              <div class="tp-option" data-tpl="modern">
+                <div class="tp-thumb thumb-modern">
+                  <div class="tpt-sidebar"></div>
+                  <div class="tpt-content"><div></div><div></div></div>
+                </div>
+                <span>Modern</span>
+              </div>
+              <div class="tp-option" data-tpl="creative">
+                <div class="tp-thumb thumb-creative">
+                  <div class="tpt-accent"></div>
+                  <div class="tpt-big"></div>
+                  <div class="tpt-smalls"><div></div><div></div></div>
+                </div>
+                <span>Creative</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /editor-area -->
+    </div><!-- /dashboard-main -->
+
+    <!-- Live Preview Pane -->
+    <div class="preview-pane" id="preview-pane">
+      <div class="preview-header">
+        <span class="preview-title"><i class="fas fa-eye"></i> Live Preview</span>
+        <div class="preview-controls">
+          <button class="icon-btn" id="preview-desktop" title="Desktop"><i class="fas fa-desktop"></i></button>
+          <button class="icon-btn active" id="preview-mobile-btn" title="Mobile"><i class="fas fa-mobile-alt"></i></button>
+          <button class="icon-btn" id="close-preview" title="Close Preview"><i class="fas fa-times"></i></button>
+        </div>
+      </div>
+      <div class="preview-viewport" id="preview-viewport">
+        <iframe id="portfolio-preview" title="Portfolio Preview"></iframe>
+      </div>
+    </div>
+
+  </div><!-- /dashboard-page -->
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <i class="fas fa-check-circle"></i>
+    <span id="toast-message">Changes saved!</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
